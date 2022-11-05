@@ -63,18 +63,18 @@ export const TransactionProvider = ({ children }) => {
         (transaction) => ({
           addressFrom: transaction.sender,
           addressTo: transaction.receiver,
-          amount: (parseFloat(transaction.amount) / 10 ** 18),
+          amount: parseFloat(transaction.amount) / 10 ** 18,
           keyWord: transaction.keyWord,
           message: transaction.message,
           timestamp: new Date(
             transaction.timestamp.toNumber() * 1000
-          ).toLocaleDateString(),
+          ).toLocaleString(),
         })
       );
       setTransactions(structuredTransactions);
       console.log(transactions);
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   };
 
