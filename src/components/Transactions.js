@@ -1,10 +1,6 @@
 import React, { useContext } from "react";
 import { TransactionContext } from "../context/TransactionContext";
-import dummyData from "../utils/dummyData";
-
-import { GlobalElement } from "./cards/GlobalElement";
-import GeneralCard from "./cards/GeneralCard";
-
+import dummyData from "../utils/dummyData";;
 import { shortenAddress } from "../utils/shortenAddress";
 
 const TransactionsCard = ({
@@ -65,25 +61,6 @@ function Transactions() {
             Connect your account to see the latest transactions
           </h3>
         )}
-
-        {/* <div className=" mt-[3.125rem] mb-[0.3125rem] mx-[4.375rem]">
-          <GlobalElement
-            heading="Our Impressive Portfolio"
-            details="Cras ex odio, luctus vel rhoncus quis, pellentesque a urna."
-          />
-          <div className=" grid grid-cols-3 gap-y-[3.75rem] gap-x-[1.875rem] mb-[3.75rem]">
-            {porfolio.map((elem, id) => (
-              <GeneralCard
-                key={id}
-                img={elem.img}
-                alt={elem.details}
-                subtitle={elem.subtitle}
-                details={elem.details}
-                featured={elem.featured}
-              />
-            ))}
-          </div>
-        </div> */}
 
         <section class="text-white body-font overflow-hidden">
           <div class=" flex flex-col-reverse px-5 py-4 mx-auto">
