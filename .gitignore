@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+git config core.ignorecase false
+
+
 # testing
 /coverage
 
